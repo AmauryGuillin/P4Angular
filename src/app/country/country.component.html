@@ -1,0 +1,13 @@
+<div class="country">
+  <h3>{{ country.name }}</h3>
+  <p>
+    capital : {{ country.capital }} <br />
+    langage : {{ country.language }} <br />
+    native official name : {{ country.nativeNameOfficial }} <br />
+    Current weather at {{ country.capital }} is :
+    {{ country.capitalMainDescription }} <br />
+    T° = {{ country.capitalTemperature.toString() | number : "1.2-2" }}°C <br />
+    %Humidity = {{ country.capitalHumidity }}% <br />
+    Pressure = {{ country.capitalPressure }} hPa
+  </p>
+</div>

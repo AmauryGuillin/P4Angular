@@ -1,0 +1,30 @@
+export class Country {
+  name!: String;
+  official!: String;
+  nativeNameOfficial!: String;
+  nativeNameCommon!: String;
+  cca2!: String;
+  currencyName!: String;
+  currencySymbol!: String;
+  capital!: String;
+  region!: String;
+  subregion!: String;
+  language!: String;
+  latlng!: [Number];
+  islandlocked!: Boolean;
+  borders!: [String];
+  area!: Number;
+  flag!: String;
+  population!: Number;
+  gini!: Number;
+  carside!: String;
+  startOfWeek!: String;
+  capitalLocation!: [Number];
+  capitalMainDescription!: String;
+  capitalTemperature!: Number;
+  capitalHumidity!: Number;
+  capitalPressure!: Number;
+  capitalWindSpeed!: Number;
+  capitalWindDirection!: Number;
+  capitalCouldPercentage!: Number;
+}

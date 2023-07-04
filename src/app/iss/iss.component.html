@@ -1,0 +1,6 @@
+<p>Quelques info sur le dernier fetch de la positon de l'ISS</p>
+<ul *ngIf="iss.length > 0">
+  <li>Longitude : {{ iss[0].longitude }}</li>
+  <li>Latitude : {{ iss[0].latitude }}</li>
+  <li>Donnée récupérée à {{ iss[0].hour }} le {{ iss[0].date }}</li>
+</ul>
