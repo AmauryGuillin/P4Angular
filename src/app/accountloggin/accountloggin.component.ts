@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountlogginService } from '../accountloggin.service';
 import { HttpClient } from '@angular/common/http';
+import { AccountLoggin } from '../models/accountLoggin.model';
 
 @Component({
   selector: 'app-accountloggin',
@@ -9,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AccountlogginComponent implements OnInit {
   accountLoggins!: any[];
+  account: AccountLoggin = new AccountLoggin();
 
   constructor(private accountLogginService: AccountlogginService) {}
 
@@ -32,11 +34,25 @@ export class AccountlogginComponent implements OnInit {
   deleteAccountById(accountId: number) {
     this.accountLogginService.deleteAccountLoggin(accountId).subscribe({
       next: () => {
-        console.log('OK');
+        console.log('User deleted with success');
         this.fetchAccountLoggins();
       },
       error: (error) => {
-        console.log(`KO : ${error}`);
+        console.log(
+          `There was a problem when deleteting a user (id = ${accountId}) : ${error}`
+        );
+      },
+    });
+  }
+
+  createAccount() {
+    this.accountLogginService.createAccountLogin(this.account).subscribe({
+      next: () => {
+        console.log('account created with succcess');
+        this.fetchAccountLoggins();
+      },
+      error: (error) => {
+        console.log(`There was a problem when creating a user : ${error}`);
       },
     });
   }

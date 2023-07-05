@@ -13,3 +13,29 @@
     </td>
   </tr>
 </table>
+
+<hr />
+
+<form (submit)="createAccount()">
+  <div>
+    <label for="username">Username : </label>
+    <input
+      type="text"
+      name="username"
+      placeholder="enter a username"
+      [(ngModel)]="account.username"
+    />
+  </div>
+  <div>
+    <label for="username">Password : </label>
+    <input
+      type="text"
+      name="username"
+      placeholder="enter a password"
+      [(ngModel)]="account.password"
+    />
+  </div>
+  <div>
+    <button type="submit">Create</button>
+  </div>
+</form>
