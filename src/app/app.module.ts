@@ -13,6 +13,7 @@ import { IssComponent } from './iss/iss.component';
 import { CountryComponent } from './country/country.component';
 import { AccountlogginComponent } from './accountloggin/accountloggin.component';
 import { FormsModule } from '@angular/forms';
+import { IssmapComponent } from './issmap/issmap.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     IssComponent,
     CountryComponent,
     AccountlogginComponent,
+    IssmapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

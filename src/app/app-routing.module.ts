@@ -5,6 +5,7 @@ import { AnimalsComponent } from './animals/animals.component';
 import { CountriesComponent } from './countries/countries.component';
 import { IssComponent } from './iss/iss.component';
 import { AccountlogginComponent } from './accountloggin/accountloggin.component';
+import { IssmapComponent } from './issmap/issmap.component';
 
 const routes: Routes = [
   { path: '', component: MainComponentComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'countries', component: CountriesComponent },
   { path: 'iss', component: IssComponent },
   { path: 'accountLoggin', component: AccountlogginComponent },
+  { path: 'issmap', component: IssmapComponent },
 ];
 
 @NgModule({
