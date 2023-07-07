@@ -45,7 +45,7 @@ export class IssmapComponent implements OnInit {
     const issIcon = L.icon({
       iconUrl:
         '/assets/62-627547_international-space-station-transparent-background-international-space-station.png',
-      iconSize: [50, 30],
+      iconSize: [50, 50],
     });
 
     const viewCircle = L.circle([this.latitude, this.lontitude], {
